@@ -1,0 +1,23 @@
+nufirst:
+  databaseName: "TRANSLATION_SERVICE"
+
+spring:
+  cache:
+    cache-names: "localizationCache"
+  security:
+    oauth2:
+      client:
+        registration:
+          nufirst:
+            client-secret: "{cipher}abec3c541725a1693885c00c2448f71f32d3283f4a35b26dbdbe20102e900dfe516cf39834f91b4332c0df1726639ff9269378a73d192211e2542e5085653e3b"
+  datasource:
+    url: "jdbc:mysql://mysql:3306/TRANSLATION_SERVICE?createDatabaseIfNotExist=true&useSSL=false&useTimezone=true&useUnicode=true&useLegacyDatetimeCode=false&serverTimezone=UTC&cacheDefaultTimezone=false"
+
+springdoc:
+  swagger-ui:
+    oauth:
+      client-secret: "{cipher}abec3c541725a1693885c00c2448f71f32d3283f4a35b26dbdbe20102e900dfe516cf39834f91b4332c0df1726639ff9269378a73d192211e2542e5085653e3b"
+
+eureka:
+  instance:
+    hostname: translation-service

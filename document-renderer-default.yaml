@@ -1,0 +1,18 @@
+spring:
+  security:
+    oauth2:
+      client:
+        registration:
+          nufirst:
+            client-id: "nufirst.documentrenderer"
+            client-secret: "{cipher}335ac43f981ce95d505094142b58adf442ea8072793c18cc7c39b9d3a98c6415078b02ca3065242d5ee874313fad24302db07dc37067da904b07ae54064e2a08"
+
+iron-pdf:
+  license-key: "{cipher}d4ae0f9486d75a4b05aa3c4d5d2170568e8029d597984249a497cb9c8c984f376e21975edcb99303de3bfe6814252d46"
+  rendering-timeout: 600
+
+Eureka:
+  Client:
+    ServiceUrl: "http://eureka-server:8761/eureka"
+  Instance:
+    HostName: "document-renderer"

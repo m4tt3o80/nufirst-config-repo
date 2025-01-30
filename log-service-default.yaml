@@ -1,0 +1,24 @@
+nufirst:
+  databaseName: "LOG_SERVICE"
+
+spring:
+  security:
+    oauth2:
+      client:
+        registration:
+          nufirst:
+            client-secret: "{cipher}e8221330785a5843807f80576b0df957bb29f35fdb86e13e45c959e990ce5e49e0e794b5240521a31c13e384e571c2be9e9ca69f9caaf4c85a8b38d4720e561b"
+  datasource:
+    url: "jdbc:mysql://mysql:3306/LOG_SERVICE?createDatabaseIfNotExist=true&useSSL=false&useTimezone=true&useUnicode=true&useLegacyDatetimeCode=false&serverTimezone=UTC"
+
+springdoc:
+  swagger-ui:
+    oauth:
+      client-secret: "{cipher}e8221330785a5843807f80576b0df957bb29f35fdb86e13e45c959e990ce5e49e0e794b5240521a31c13e384e571c2be9e9ca69f9caaf4c85a8b38d4720e561b"
+eureka:
+  instance:
+    hostname: "log-service"
+
+logging:
+  level:
+    root: "DEBUG"
