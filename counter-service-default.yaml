@@ -1,0 +1,17 @@
+nufirst:
+  databaseName: "COUNTER_SERVICE"
+
+spring:
+  security:
+    oauth2:
+      client:
+        registration:
+          nufirst:
+            client-secret: "{cipher}891d7a2c7ef858b8366c8d5e0866ce1e29034f471e0f334f176755ab3b5a005e6759e522bf4d40db511e7758388435add42412e270f5398d86ed3339efbff35b"
+  datasource:
+    url: "jdbc:mysql://localhost:3306/COUNTER_SERVICE?createDatabaseIfNotExist=true&useSSL=false&useTimezone=true&useUnicode=true&useLegacyDatetimeCode=false&serverTimezone=UTC"
+
+springdoc:
+  swagger-ui:
+    oauth:
+      client-secret: "{cipher}891d7a2c7ef858b8366c8d5e0866ce1e29034f471e0f334f176755ab3b5a005e6759e522bf4d40db511e7758388435add42412e270f5398d86ed3339efbff35b"

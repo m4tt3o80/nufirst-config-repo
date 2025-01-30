@@ -1,0 +1,17 @@
+nufirst:
+  databaseName: "HL7_SERVICE"
+
+spring:
+  security:
+    oauth2:
+      client:
+        registration:
+          nufirst:
+            client-secret: "{cipher}025373a32ef5b62c287779206757abf314f265b7d11d3561b5c6b3a384fc4168cf2dfc383c0cf51a08dc130f3e8729448e3809e4a242dfddcfbdbdb6c55181c5"
+  datasource:
+    url: "jdbc:mysql://localhost:3306/HL7_SERVICE?createDatabaseIfNotExist=true&useSSL=false&useTimezone=true&useUnicode=true&useLegacyDatetimeCode=false&serverTimezone=UTC"
+
+springdoc:
+  swagger-ui:
+    oauth:
+      client-secret: "{cipher}025373a32ef5b62c287779206757abf314f265b7d11d3561b5c6b3a384fc4168cf2dfc383c0cf51a08dc130f3e8729448e3809e4a242dfddcfbdbdb6c55181c5"

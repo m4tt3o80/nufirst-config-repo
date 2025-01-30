@@ -1,0 +1,12 @@
+spring:
+  security:
+    oauth2:
+      client:
+        registration:
+          nufirst:
+            client-secret: "{cipher}247abdd14f8e6509c6a286d1e7327c1ed43b3c53047de8ad29a8b782aed5093e"
+
+springdoc:
+  swagger-ui:
+    oauth:
+      client-secret: "{cipher}247abdd14f8e6509c6a286d1e7327c1ed43b3c53047de8ad29a8b782aed5093e"
