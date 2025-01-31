@@ -1,0 +1,23 @@
+nufirst:
+  databaseName: "REPORTING_SERVICE"
+
+spring:
+  security:
+    oauth2:
+      client:
+        registration:
+          nufirst:
+            client-secret: "{cipher}7c4e2b4fcad2ab9fd9b5362d85893396317f5f70700cfd066fa6a53835cca7d653f1e9a5f9030bbfa71a3cf439f69d0fa25d4807791d6cc19ae69356b4fdc835"
+  datasource:
+    url: "jdbc:mysql://mysql:3306/REPORTING_SERVICE?createDatabaseIfNotExist=true&useSSL=false&useTimezone=true&useUnicode=true&useLegacyDatetimeCode=false&serverTimezone=UTC&cacheDefaultTimezone=false"
+  jpa:
+    properties:
+      hibernate:
+        show_sql: false
+springdoc:
+  swagger-ui:
+    oauth:
+      client-secret: "{cipher}7c4e2b4fcad2ab9fd9b5362d85893396317f5f70700cfd066fa6a53835cca7d653f1e9a5f9030bbfa71a3cf439f69d0fa25d4807791d6cc19ae69356b4fdc835"
+eureka:
+  instance:
+    hostname: reporting-service

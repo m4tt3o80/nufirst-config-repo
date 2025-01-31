@@ -1,0 +1,20 @@
+nufirst:
+  databaseName: "HL7_SERVICE"
+
+spring:
+  security:
+    oauth2:
+      client:
+        registration:
+          nufirst:
+            client-secret: "{cipher}4d6ea71f4c60506feb363dcd573592ef287c0f416a5d95f5dd42781baa0757c81281a9756015f5355e29aa5b3335995304484290fb1bce57a8c6761eec6f65c8"
+  datasource:
+    url: "jdbc:mysql://mysql:3306/HL7_SERVICE?createDatabaseIfNotExist=true&useSSL=false&useTimezone=true&useUnicode=true&useLegacyDatetimeCode=false&serverTimezone=UTC"
+
+springdoc:
+  swagger-ui:
+    oauth:
+      client-secret: "{cipher}4d6ea71f4c60506feb363dcd573592ef287c0f416a5d95f5dd42781baa0757c81281a9756015f5355e29aa5b3335995304484290fb1bce57a8c6761eec6f65c8"
+eureka:
+  instance:
+    hostname: hl7-service
