@@ -20,4 +20,4 @@ springdoc:
 
 logging:
   level:
-    org.springframework: debug
+    org.springframework.web: debug
