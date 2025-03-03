@@ -11,7 +11,7 @@ spring:
   datasource:
     url: "jdbc:mysql://localhost:3306/MAIN_BACKEND?createDatabaseIfNotExist=true&useSSL=false&useTimezone=true&useUnicode=true&useLegacyDatetimeCode=false&serverTimezone=UTC&cacheDefaultTimezone=false"
   jpa:
-    show-sql: true
+    show-sql: false
 
 springdoc:
   swagger-ui:
